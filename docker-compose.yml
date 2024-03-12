@@ -32,9 +32,9 @@ services:
       - "--s3-use-path-access-style"
       - "--cortex-hostnames"
       - "cortex"
-      - "--cortex-keys"
+      #- "--cortex-keys"
       # put cortex api key once cortex is bootstraped
-      - "<cortex_api_key>"
+      #- "<cortex_api_key>"
 
   cassandra:
     image: 'cassandra:4'
