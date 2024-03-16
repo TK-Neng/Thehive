@@ -7,7 +7,7 @@ services:
       # Remove cortex if not needed
       - cortex
     ports:
-      - "9000:9010"
+      - "9010:9000"
     environment:
       - JVM_OPTS="-Xms1024M -Xmx1024M"
       - SECRET_KEY="mySecretForTheHive"
@@ -41,7 +41,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - /tmp/cortex-jobs:/tmp/cortex-jobs
     ports:
-      - "9001:9011"
+      - "9011:9001"
 
 volumes:
   cassandradata:
